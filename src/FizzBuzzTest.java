@@ -10,9 +10,16 @@ public class FizzBuzzTest {
 	public void test() {
 		assertThat(fizzBuzz(1), equalTo("1"));
 	}
+	@Test
+	public void test2() {
+		assertThat(fizzBuzz(2), equalTo("2"));
+	}
 
 	private String fizzBuzz(int i) {
-		return "1";
+		if(i == 1)
+			return "1";
+		else
+			return "2";
 	}
 
 }
